@@ -1,0 +1,115 @@
+{
+  "houses": [
+    {
+      "id": "0e237ac9-88b0-47a0-8edb-afa639b04a36"
+    },
+    {
+      "school": "Hogwarts School of Witchcraft and Wizardry",
+      "id": "1760529f-6d51-4cb1-bcb1-25087fce5bde",
+      "mascot": "lion",
+      "headOfHouse": "Minerva McGonagall",
+      "houseGhost": "Nearly Headless Nick",
+      "founder": "Goderic Gryffindor",
+      "values": [
+        "courage",
+        "bravery",
+        "nerve",
+        "chivalry"
+      ],
+      "name": "Gryffindor",
+      "colors": [
+        "scarlet",
+        "gold"
+      ]
+    },
+    {
+      "id": "1b48062a-2b1c-4918-b450-5fb4342429f0"
+    },
+    {
+      "colors": [
+        "yellow",
+        "black"
+      ],
+      "school": "Hogwarts School of Witchcraft and Wizardry",
+      "name": "Hufflepuff",
+      "houseGhost": "The Fat Friar",
+      "values": [
+        "hard work",
+        "patience",
+        "justice",
+        "loyalty"
+      ],
+      "mascot": "badger",
+      "founder": "Helga Hufflepuff",
+      "id": "542b28e2-9904-4008-b038-034ab312ad7e",
+      "headOfHouse": "Pomona Sprout"
+    },
+    {
+      "houseGhost": "The Grey Lady",
+      "values": [
+        "intelligence",
+        "creativity",
+        "learning",
+        "wit"
+      ],
+      "founder": "Rowena Ravenclaw",
+      "colors": [
+        "blue",
+        " bronze"
+      ],
+      "headOfHouse": "Fillius Flitwick",
+      "mascot": "eagle",
+      "name": "Ravenclaw",
+      "id": "56cabe3a-9bce-4b83-ba63-dcd156e9be45",
+      "school": "Hogwarts School of Witchcraft and Wizardry"
+    },
+    {
+      "id": "6af40ac5-edf4-4030-8b0c-b2fd97328cb4"
+    },
+    {
+      "apiKey": "ac1a66d8-0cbd-4882-bffa-69389d285aea",
+      "id": "76c0cebe-0c48-4e5e-8189-51506b4a1396"
+    },
+    {
+      "id": "7fc75845-531d-4eda-b821-ed960cd43c43",
+      "apiKey": "ac1a66d8-0cbd-4882-bffa-69389d285aea"
+    },
+    {
+      "id": "91d03775-3b00-46a9-9a70-609d2e78b1a4",
+      "apiKey": "ac1a66d8-0cbd-4882-bffa-69389d285aea"
+    },
+    {
+      "id": "a12df30a-c857-4380-b1fd-e3f1d80ef3a9"
+    },
+    {
+      "colors": [
+        "green",
+        "silver"
+      ],
+      "houseGhost": "The Bloody Baron",
+      "name": "Slytherin",
+      "id": "df01bd60-e3ed-478c-b760-cdbd9afe51fc",
+      "founder": "Salazar Slytherin",
+      "headOfHouse": "Severus Snape",
+      "mascot": "serpent",
+      "values": [
+        "ambition",
+        "cunning",
+        "leadership",
+        "resourcefulness"
+      ]
+    },
+    {
+      "apiKey": "ac1a66d8-0cbd-4882-bffa-69389d285aea",
+      "id": "e34b6e9f-1530-477d-be8a-4d3990113b00"
+    },
+    {
+      "id": "e5419fd0-0e05-431e-82a7-e9bcc981d20b",
+      "apiKey": "ac1a66d8-0cbd-4882-bffa-69389d285aea"
+    },
+    {
+      "apiKey": "ac1a66d8-0cbd-4882-bffa-69389d285aea",
+      "id": "e55f0766-e58a-464a-87f5-e32468514eeb"
+    }
+  ]
+}
