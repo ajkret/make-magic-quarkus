@@ -2,6 +2,7 @@ package dersommer.magic.resource;
 
 import dersommer.magic.dto.Houses;
 import dersommer.magic.resource.request.CharacterParam;
+import dersommer.magic.service.CharacterService;
 import dersommer.magic.service.HousesService;
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
@@ -11,17 +12,14 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import lombok.AllArgsConstructor;
 
 @Path("/api/characters")
+@AllArgsConstructor
 public class CharactersResource {
 
   HousesService service;
-
-  public CharactersResource(HousesService service) {
-
-    this.service = service;
-  }
-
+  CharacterService characterService;
 
   @GET
   @Path("/houses")
@@ -33,8 +31,8 @@ public class CharactersResource {
   @POST
   @Consumes(MediaType.APPLICATION_JSON)
   public Response insert(CharacterParam request) {
-
     
+    return characterService.saveCharacter(request) ? Response.ok().entity("Character saved").build():Response.notModified().build();
   }
 
 }

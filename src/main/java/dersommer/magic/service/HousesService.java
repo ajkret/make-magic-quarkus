@@ -2,9 +2,9 @@ package dersommer.magic.service;
 
 import dersommer.magic.client.potter.HousesClient;
 import dersommer.magic.dto.Houses;
-import dersommer.magic.entity.Character;
 import dersommer.magic.repository.CharactersRepository;
-import dersommer.magic.resource.request.CharacterParam;
+import io.quarkus.cache.CacheResult;
+import java.time.LocalDateTime;
 import java.util.Optional;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -15,7 +15,7 @@ import org.eclipse.microprofile.rest.client.inject.RestClient;
 public class HousesService {
   String apiKey;
   HousesClient housesClient;
-  CharactersRepository repository;
+  LocalDateTime validThru = LocalDateTime.MIN;
 
   @Inject
   public HousesService(@RestClient HousesClient housesClient,
@@ -23,25 +23,13 @@ public class HousesService {
                        @ConfigProperty(name = "app.magic.potter-houses-client-api-key") String apiKey) {
     this.apiKey = apiKey;
     this.housesClient = housesClient;
-    this.repository = repository;
   }
 
+  @CacheResult(cacheName = "houses-cache")
   public Optional<Houses> retrieveHouses() {
     return housesClient.queryHouses(apiKey);
   }
 
-  public boolean saveCharacter(CharacterParam request) {
-    Character character = new Character();
-    character.house = request.getHouse();
-    character.patronus = request.getPatronus();
-    character.role = request.getRole();
-    character.school = request.getSchool();
-    character.name = request.getName();
-
-    repository.persist(character);
-
-    return true;
-  }
 
 }
 

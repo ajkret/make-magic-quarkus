@@ -8,7 +8,7 @@ import org.bson.types.ObjectId;
 
 @Getter
 @Setter
-@MongoEntity(collection = "Characters")
+@MongoEntity(database = "make-magic", collection = "Characters")
 public class Character {
 
   @BsonId

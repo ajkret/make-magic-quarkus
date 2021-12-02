@@ -5,6 +5,7 @@ import dersommer.magic.client.potter.HousesClient;
 import dersommer.magic.dto.Houses;
 import dersommer.magic.repository.CharactersRepository;
 import dersommer.magic.test.LoadFile;
+import java.time.LocalDateTime;
 import java.util.Optional;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
