@@ -10,7 +10,7 @@ import javax.validation.Payload;
 
 @Documented
 @Constraint(validatedBy = HouseValidator.class)
-@Target({ElementType.METHOD, ElementType.FIELD})
+@Target({ElementType.METHOD, ElementType.FIELD, ElementType.PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ValidHouse {
   String message() default "Invalid House";
@@ -18,4 +18,6 @@ public @interface ValidHouse {
   Class<?>[] groups() default {};
 
   Class<? extends Payload>[] payload() default {};
+
+  boolean nullable() default false;
 }

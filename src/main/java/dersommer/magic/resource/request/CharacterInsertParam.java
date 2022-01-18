@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class CharacterParam {
+public class CharacterInsertParam {
 
   @NotNull
   private String name;
