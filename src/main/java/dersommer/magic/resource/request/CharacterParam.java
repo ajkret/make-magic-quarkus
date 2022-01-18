@@ -1,5 +1,6 @@
 package dersommer.magic.resource.request;
 
+import dersommer.magic.validation.ValidHouse;
 import javax.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,6 +16,7 @@ public class CharacterParam {
   @NotNull
   private String school;
   @NotNull
+  @ValidHouse
   private String house;
   @NotNull
   private String patronus;

@@ -5,6 +5,7 @@ import dersommer.magic.resource.request.CharacterParam;
 import dersommer.magic.service.CharacterService;
 import dersommer.magic.service.HousesService;
 import javax.inject.Inject;
+import javax.validation.Valid;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -30,7 +31,7 @@ public class CharactersResource {
   
   @POST
   @Consumes(MediaType.APPLICATION_JSON)
-  public Response insert(CharacterParam request) {
+  public Response insert(@Valid CharacterParam request) {
     
     return characterService.saveCharacter(request) ? Response.ok().entity("Character saved").build():Response.notModified().build();
   }

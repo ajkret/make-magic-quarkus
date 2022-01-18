@@ -1,8 +1,10 @@
 package dersommer.magic.entity;
 
 import io.quarkus.mongodb.panache.common.MongoEntity;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.bson.codecs.pojo.annotations.BsonId;
 import org.bson.types.ObjectId;
 
